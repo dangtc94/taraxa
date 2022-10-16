@@ -8,9 +8,9 @@ if [[ $(which docker) && $(docker --version) ]]; then
     sleep 1
     sudo apt install -y docker-compose
     rm -f get-docker.sh
+    sleep 1
 fi
 
-sleep 1
 cd ~/
 wget https://github.com/Taraxa-project/taraxa-ops/archive/refs/heads/master.zip && unzip master.zip && rm -f master.zip
 
