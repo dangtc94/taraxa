@@ -1,9 +1,14 @@
-
-wget -O get-docker.sh https://get.docker.com 
-sudo sh get-docker.sh
-sleep 1
-sudo apt install -y docker-compose
-rm -f get-docker.sh
+#!/bin/bash
+if [[ $(which docker) && $(docker --version) ]]; then
+    echo "Docker installed!"
+    # command
+  else
+    wget -O get-docker.sh https://get.docker.com 
+    sudo sh get-docker.sh
+    sleep 1
+    sudo apt install -y docker-compose
+    rm -f get-docker.sh
+fi
 
 sleep 1
 cd ~/
