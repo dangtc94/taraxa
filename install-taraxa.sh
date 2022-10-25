@@ -10,7 +10,7 @@ if [[ $(which docker) && $(docker --version) ]]; then
     rm -f get-docker.sh
     sleep 1
 fi
-
+ apt install unzip
 cd ~/
 wget https://github.com/Taraxa-project/taraxa-ops/archive/refs/heads/master.zip && unzip master.zip && rm -f master.zip
 
