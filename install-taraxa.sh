@@ -21,7 +21,7 @@ sudo docker-compose up -d
 #sudo docker-compose logs -f
 
 sleep 3
-echo "key: \n"
+
 docker exec taraxa_compose-node-1 cat /opt/taraxa_data/conf/wallet.json
-echo "proof: \n"
+
 docker exec taraxa_compose-node-1 taraxa-sign sign --wallet /opt/taraxa_data/conf/wallet.json
