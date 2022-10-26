@@ -1,4 +1,11 @@
 #!/bin/bash
+cd ~/taraxa-ops-master/taraxa_compose
+sudo docker-compose down -v
+sleep 1
+cd $HOME
+rm -rf taraxa-ops-master/
+sleep 1
+
 if [[ $(which docker) && $(docker --version) ]]; then
     echo "Docker installed!"
     # command
