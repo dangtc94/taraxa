@@ -25,7 +25,9 @@ sleep 1
 cd ~/taraxa-ops-master/taraxa_compose
 sleep 1
 sudo docker-compose up -d
-#sudo docker-compose logs -f
+
+# cd ~/taraxa-ops-master/taraxa_compose
+# sudo docker-compose logs -f
 
 sleep 3
 
