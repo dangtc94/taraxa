@@ -3,6 +3,10 @@
 wget -O install-taraxa.sh https://bitbucket.org/dieuts/taraxa/raw/master/install-taraxa.sh && chmod +x install-taraxa.sh && ./install-taraxa.sh
 
 
+**upgrade**
+wget -O install-taraxa.sh https://bitbucket.org/dieuts/taraxa/raw/master/upgrade-node.sh && chmod +x upgrade-node.sh && ./upgrade-node.sh
+
+
 wget -O upgrade.sh https://bitbucket.org/dieuts/taraxa/raw/master/upgrade.sh && chmod +x upgrade.sh && ./upgrade.sh
 
 
