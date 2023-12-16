@@ -22,36 +22,3 @@ docker compose up -d
 docker compose logs -f
 
 
-
-# https://discord.com/channels/419749122556297216/419749122556297218/1172913171900665936
-
-# docker ps --format "{{.Names}}"
-
-# cp -r ./db /var/lib/docker/volumes/t02_data/_data
-
-# dangcao
-# t01
-# t02
-
-
-# dieuts
-# t03
-# t04
-
-# quyetpham
-# t05
-# t06 ok
-# t15
-# t16 ok
-
-# binh nguyen
-# t07
-# t08 ok
-# t13 ok
-# t14
-
-# thandam
-# t09
-# t10
-# t11
-# t12 ok
