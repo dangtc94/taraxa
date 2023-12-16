@@ -1,17 +1,22 @@
 #!/bin/sh
 
-# if [[ $(which docker) && $(docker --version) ]]; then
-#     echo "Docker installed!"
-#     # command
-#   else
-#     wget -O get-docker.sh https://get.docker.com 
-#     sudo sh get-docker.sh
-#     sleep 1
-#     sudo apt install -y docker-compose
-#     rm -f get-docker.sh
-#     sleep 1
-# fi
+if [[ $(which docker) && $(docker --version) ]]; then
+    echo "Docker installed!"
+    # command
+  else
+    wget -O get-docker.sh https://get.docker.com 
+    sudo sh get-docker.sh
+    sleep 1
+    sudo apt install -y docker-compose
+    rm -f get-docker.sh
+    sleep 1
+fi
+
 ufw allow ssh
+
+#----------------------------------------------------
+# NHO THAY THE WALLET, docker, docker compose
+#----------------------------------------------------
 
 noOfNodes=15
 #create 3 nodes: 01 02 03
@@ -46,7 +51,7 @@ while [ "$i" -le $noOfNodes ]; do
 	sed -i 's/"db_snapshot_each_n_pbft_block" : 10000/"db_snapshot_each_n_pbft_block" : 0/gi' ./config/testnet.json
 	sleep 1
 
-	docker-compose up -d
+	#docker-compose up -d
 
 	cd  ..
 	
