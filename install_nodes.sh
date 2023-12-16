@@ -12,7 +12,7 @@
 #     sleep 1
 # fi
 
-noOfNodes=3
+noOfNodes=15
 #create 3 nodes: 01 02 03
 
 i=1
