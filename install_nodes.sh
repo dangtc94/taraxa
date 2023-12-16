@@ -11,6 +11,7 @@
 #     rm -f get-docker.sh
 #     sleep 1
 # fi
+ufw allow ssh
 
 noOfNodes=15
 #create 3 nodes: 01 02 03
@@ -51,3 +52,5 @@ while [ "$i" -le $noOfNodes ]; do
 	
     i=$(( i + 1 ))
 done
+
+ufw enable
