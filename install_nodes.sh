@@ -44,7 +44,9 @@ while [ "$i" -le $noOfNodes ]; do
 	sed -i 's/"db_max_snapshots" : 1/"db_max_snapshots" : 0/gi' ./config/testnet.json
 	sed -i 's/"db_snapshot_each_n_pbft_block" : 10000/"db_snapshot_each_n_pbft_block" : 0/gi' ./config/testnet.json
 	sleep 1
-	
+
+	docker-compose up -d
+
 	cd  ..
 	
     i=$(( i + 1 ))
